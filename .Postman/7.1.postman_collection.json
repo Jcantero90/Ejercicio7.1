@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "f53eca6c-1ee9-4974-9180-f743ca612ec1",
+		"name": "7.1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22850433"
+	},
+	"item": [
+		{
+			"name": "Test Listar todo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Test",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Test"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add People to List",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"meponguceno\",\r\n    \"age\":0,\r\n    \"population\":\"MerenguitoMerengon\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/addPeople",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addPeople"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ged ID",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Delete by ID",
+			"request": {
+				"method": "DELETE",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Modify List by Put",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"UserModified\",\r\n    \"age\":23,\r\n    \"population\":\"DefaultCityModified\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/persona/modityById/0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"persona",
+						"modityById",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modify List by Put with Nulls",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"UserModifiedWithNulls\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/persona/modityById/0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"persona",
+						"modityById",
+						"0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
