@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Executable" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="com.example.bosonit71.Application" />
+    <module name="7.1" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
